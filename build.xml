@@ -139,7 +139,7 @@
     </target>
 
     <target name="phpdox" depends="phploc-ci,phpcs-ci,phpmd-ci" description="Generate API documentation using phpDox">
-        <exec executable="${basedir}/build/tools/phpdox.phar" dir="${basedir}/build" taskname="phpdox"/>
+        <exec executable="${basedir}/build/tools/vendor/bin/phpdox" dir="${basedir}/build" taskname="phpdox"/>
     </target>
 
     <target name="-check-failure">
